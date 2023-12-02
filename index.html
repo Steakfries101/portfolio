@@ -13,7 +13,32 @@
     />
   </head>
   <body>
-    <!-- Link to Bootstrap JS -->
+
+<!-- Use Bootstrap to create a single page portfolio website. It must include (all must be created with Bootstrap classes, not regular CSS): 
+
+1.A fully responsive navbar that sticks to the top of the page and has 
+2. A logotype animation that links to the top of the page (you may use one of the name / initial animations from previous assignments, or create a new one). Add animation CSS to main.scss.
+3.In-page links to each section of your site -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
     <script src="dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
