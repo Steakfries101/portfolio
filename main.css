@@ -30,6 +30,11 @@
     color: red;
   }
 }
+@media (min-width: 1900px) {
+  .container {
+    max-width: 1900px !important;
+  }
+}
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

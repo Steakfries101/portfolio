@@ -37,8 +37,13 @@
     100% {
         color: red;
     }
+    
 }
-
+@media (min-width: 1900px) {
+    .container {
+      max-width: 1900px !important;
+    }
+  }
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
