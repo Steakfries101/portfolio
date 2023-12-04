@@ -3,58 +3,56 @@
 // Custom.scss
 
 .evan {
-    display: block;
-    color: red;
-    text-decoration: none;
-    font-family: "Pixelify Sans", cursive;
-    // font-size: 30px;
-    animation: flashing 10s 2s both infinite;
-    transition: 0.3s;
+  display: block;
+  color: red;
+  text-decoration: none;
+  font-family: "Pixelify Sans", cursive;
+  // font-size: 30px;
+  animation: flashing 10s 2s both infinite;
+  transition: 0.3s;
 }
 
 .evan:hover {
-    color: red;
-    font-size: 35px;
+  color: red;
+  font-size: 35px;
 }
 
 @keyframes flashing {
-    0% {
-        color: red;
-    }
+  0% {
+    color: red;
+  }
 
-    25% {
-        color: yellow;
-    }
+  25% {
+    color: yellow;
+  }
 
-    50% {
-        color: #04d9ff;
-    }
+  50% {
+    color: #04d9ff;
+  }
 
-    75% {
-        color: #39ff14;
-    }
+  75% {
+    color: #39ff14;
+  }
 
-    100% {
-        color: red;
-    }
-    
+  100% {
+    color: red;
+  }
 }
 @media (min-width: 1900px) {
-    .container {
-      max-width: 1900px !important;
-    }
+  .container {
+    max-width: 1900px !important;
   }
+}
 // Option A: Include all of Bootstrap
-
+// #2B3499
+// #FF6C22
+// #FF9209
+// #FFD099
 // Include any default variable overrides here (though functions won't be available)
-
+$primary: #2b3499;
+$secondary: #ff9209;
+$info: #ffd099;
 @import "scss/bootstrap";
-
-// Then add additional custom code here
-// Option A: Include all of Bootstrap
-
-// Include any default variable overrides here (though functions won't be available)
-
 @import "scss/bootstrap";
 
 // Then add additional custom code here
