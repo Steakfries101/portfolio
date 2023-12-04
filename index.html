@@ -15,7 +15,7 @@
 </head>
 
 
-<body">
+<body class="bg-primary bg-opacity-10">
   <!-- Use Bootstrap to create a single page portfolio website. It must include (all must be created with Bootstrap classes, not regular CSS): 
 
 1.A fully responsive navbar that sticks to the top of the page and has 
@@ -26,7 +26,7 @@
     <div class="container">
       <a class="navbar-brand py-3 fs-1 evan" href="index.html"> Evan Shaw </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,7 +49,7 @@
           </li>
 
           <li class="nav-item">
-            <button type="button" class="nav-link btn bg-secondary  text-white  ms-lg-5" data-bs-theme="light"
+            <button type="button" class="nav-link btn bg-secondary  text-white px-sm-1 ms-lg-5" data-bs-theme="light"
               data-bs-toggle="modal" data-bs-target="#staticBackdrop ">
               Contact me!
             </button>
@@ -82,9 +82,9 @@ Tooltip or Alert -->
           data-bs-html="true" data-bs-placement="left" data-bs-custom-class="fs-4 bg-primary"
           data-bs-title="His name is Berkley, and yes hes a good boy." alt="..." />
       </div>
-
       <div class="col-lg-6  text-primary d-flex flex-column">
-        <h3 class="fs-1 px-2 py-1 card-title text-white bg-primary mx-auto rounded overflow-hidden">I like dogs and I
+        <h3 class="fs-1 px-2 py-1 card-title text-white bg-primary mx-auto rounded overflow-hidden mt-5">I like dogs and
+          I
           like to
           <span class="text-white">code..</span>
         </h3>
@@ -94,15 +94,15 @@ Tooltip or Alert -->
           world of coding, where I found my true passion. I love the challenge of solving problems and creating
           innovative solutions through code. But my interests aren't limited to the digital world. When I'm not coding,
           you can often find me spending time with my best friends - my dogs. I believe in using my skills to make a
-          positive impact, and I'm always ready to help.<br>
+          positive impact, and I'm always ready to help.<br></p>
         <h3 class=" py-2 fs-1 px-2 mx-auto mt-5 text-white bg-primary overflow-hidden rounded ">
           Welcome to my portfolio!</h3>
-        </p>
+
       </div>
     </div>
   </div>
 
-  <div class="container-fluid text-center bg-opacity-25 pb-5 bg-primary" id="skill-set">
+  <div class="container-fluid text-center bg-opacity-25 pb-5 bg-primary shadow-lg" id="skill-set">
     <h2 class="mb-5 text-primary">My Skills</h2>
 
     <div class="row flex-lg-row">
@@ -293,9 +293,9 @@ Tooltip or Alert -->
             <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             <div class="mt-3 d-flex justify-content-around">
-              <a class="btn btn-primary" href="mailto:evanshaw34@gmail.com">Send me an Email!</a>
+              <a class="btn btn-secondary" href="mailto:evanshaw34@gmail.com">Send me an Email!</a>
 
-              <button type="button" class="btn btn-secondary ms-5" data-bs-dismiss="modal">
+              <button type="button" class="btn btn-primary ms-5" data-bs-dismiss="modal">
                 Close
               </button>
             </div>
@@ -320,6 +320,6 @@ Tooltip or Alert -->
       (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
     );
   </script>
-  </body>
+</body>
 
 </html>
