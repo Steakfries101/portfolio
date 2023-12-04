@@ -14,14 +14,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet" />
 </head>
 
-<body>
+
+<body">
   <!-- Use Bootstrap to create a single page portfolio website. It must include (all must be created with Bootstrap classes, not regular CSS): 
 
 1.A fully responsive navbar that sticks to the top of the page and has 
 2. A logotype animation that links to the top of the page (you may use one of the name / initial animations from previous assignments, or create a new one). Add animation CSS to main.scss.
 3.In-page links to each section of your site -->
 
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-primary shadow-lg">
     <div class="container">
       <a class="navbar-brand py-3 fs-1 evan" href="index.html"> Evan Shaw </a>
 
@@ -31,25 +32,25 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto fs-4">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#about">About</a>
+          <li class="nav-item text-light">
+            <a class="nav-link text-white" aria-current="page" href="#about">About</a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#education">Education</a>
           </li>
 
           <li>
-            <a class="nav-link" href="#my-work">My Work</a>
+            <a class="nav-link text-white" href="#my-work">My Work</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#skill-set">Skill Set</a>
+            <a class="nav-link text-white" href="#skill-set">Skill Set</a>
           </li>
 
           <li class="nav-item">
-            <button type="button" class="nav-link btn bg-success ms-lg-5" data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop ">
+            <button type="button" class="nav-link btn bg-secondary  text-white  ms-lg-5" data-bs-theme="light"
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop ">
               Contact me!
             </button>
           </li>
@@ -74,33 +75,35 @@ Cards
 Modal
 Tooltip or Alert -->
 
-  <div class="container mt-5" id="about">
-    <div class="row d-flex align-items-center justify-content-sm-center pb-5">
+  <div class="container mt-5 pt-5 ps-5 rounded" id="about">
+    <div class="row d-flex bg-secondary pt-5 mb-5  rounded align-items-center justify-content-sm-center pb-5">
       <div class="col-lg-6 col-md-9">
         <img src="/Images/Cut photo.jpg" class="img-fluid rounded shadow-lg" data-bs-toggle="tooltip"
           data-bs-html="true" data-bs-placement="left" data-bs-custom-class="fs-4 bg-primary"
           data-bs-title="His name is Berkley, and yes hes a good boy." alt="..." />
       </div>
 
-      <div class="col-lg-6">
-        <h5 class="card-title">I like dogs and I like to code</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ante quis
-          scelerisque euismod. Vivamus aliquet ornare mattis. Donec ac finibus neque.
-          Curabitur rutrum, ex ut sagittis luctus, quam augue tempus est, vitae
-          vestibulum mauris lorem sed mauris. Pellentesque non dui et elit sagittis
-          convallis eget vehicula nisi. Morbi sodales, lacus id convallis commodo, leo
-          nisi malesuada tellus, nec pulvinar turpis nunc vitae ante. Maecenas ultricies
-          hendrerit augue, ut iaculis tortor mattis a. Quisque sagittis at nisl eu
-          sollicitudin. Proin quis varius velit. Aenean sollicitudin molestie nisi, quis
-          tincidunt sem faucibus ut. Integer congue gravida convallis.
+      <div class="col-lg-6  text-primary d-flex flex-column">
+        <h3 class="fs-1 px-2 py-1 card-title text-white bg-primary mx-auto rounded overflow-hidden">I like dogs and I
+          like to
+          <span class="text-white">code..</span>
+        </h3>
+        <p class="card-text bg-info bg-opacity-10 fw-bold  mt-3 fs-5 text-primary">
+          Hello! I'm Evan Shaw, a passionate coder hailing from the beautiful Vancouver Island. I've always been
+          fascinated by computers and the endless possibilities they present. This fascination led me to delve into the
+          world of coding, where I found my true passion. I love the challenge of solving problems and creating
+          innovative solutions through code. But my interests aren't limited to the digital world. When I'm not coding,
+          you can often find me spending time with my best friends - my dogs. I believe in using my skills to make a
+          positive impact, and I'm always ready to help.<br>
+        <h3 class=" py-2 fs-1 px-2 mx-auto mt-5 text-white bg-primary overflow-hidden rounded ">
+          Welcome to my portfolio!</h3>
         </p>
       </div>
     </div>
   </div>
 
-  <div class="container text-center mt-5 pt-5" id="skill-set">
-    <h2 class="mb-5">My Skills</h2>
+  <div class="container-fluid text-center bg-opacity-25 pb-5 bg-primary" id="skill-set">
+    <h2 class="mb-5 text-primary">My Skills</h2>
 
     <div class="row flex-lg-row">
       <div class="col">
@@ -120,7 +123,7 @@ Tooltip or Alert -->
   </div>
 
   <div class="container-fluid w-100 mt-5 pt-5" id="my-work">
-    <h2 class="mb-5">My Past Work</h2>
+    <h2 class="mb-5 text-primary">My Past Work</h2>
     <div id="carouselExampleCaptions" class="text-center carousel slide container-md ps-0 pe-0" data-bs-theme="dark">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -176,12 +179,12 @@ Tooltip or Alert -->
   <div class="accordion container mt-5" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header">
-        <button class="accordion-button fw-bold fs-2" type="button" data-bs-toggle="collapse"
+        <button class="accordion-button fw-bold text-bg-dark fs-2 bg-primary" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           North Island College
         </button>
       </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show container" data-bs-parent="#accordionExample">
+      <div id="collapseOne" class="accordion-collapse collapse show container " data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <div class="row d-flex text-center">
             <div class="col text-start">
@@ -203,8 +206,8 @@ Tooltip or Alert -->
 
     <div class="accordion-item" id="education">
       <h2 class="accordion-header">
-        <button class="accordion-button fw-bold collapsed fs-2" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="accordion-button fw-bold collapsed fs-2 bg-primary text-white" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           BCIT
         </button>
       </h2>
@@ -230,8 +233,8 @@ Tooltip or Alert -->
 
     <div class="accordion-item" id="education">
       <h2 class="accordion-header">
-        <button class="accordion-button fw-bold collapsed fs-2" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <button class="accordion-button fw-bold collapsed fs-2 bg-primary text-white" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           LinkedIn
         </button>
       </h2>
@@ -304,8 +307,9 @@ Tooltip or Alert -->
 
   <footer class="footer mt-auto py-3 bg-light pt-5">
     <div class="container text-center">
-      <span class="text-muted">© 2022 Your Name. All rights reserved.</span>
-      <p><a href="mailto:your-email@example.com">Contact Me</a></p>
+      <span class="text-muted">© 2023 Evan Shaw. All rights reserved.</span>
+      <p><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop ">Contact Me</a>
+      </p>
     </div>
   </footer>
 
@@ -316,6 +320,6 @@ Tooltip or Alert -->
       (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
     );
   </script>
-</body>
+  </body>
 
 </html>
