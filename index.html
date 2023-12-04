@@ -165,7 +165,9 @@ Tooltip or Alert -->
             <img src="Images/Movie Mania Image.png" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-caption fw-bold bg-danger ps-5 text-start rounded shadow">
-            <u><h5>Movie Mania</h5></u>
+            <u>
+              <h5>Movie Mania</h5>
+            </u>
             <p>
               My DGL-213 project (Applied Javascript), involving The Movie Database API
             </p>
@@ -307,8 +309,11 @@ Tooltip or Alert -->
                 <p class="fw-bold fs-4">250-895-1256</p>
               </div>
               <div class="col">
-                <h4>Thank You!</h4>
-                <p class="fs-5">I will email or call back as soon as im able!</p>
+                <h4 class="text-decoration-underline">LinkedIn</h4>
+
+                <a href="https://linkedin.com/in/evan-shaw-a253a9258">
+                  linkedin.com/in/evan-shaw-a253a9258</a
+                >
               </div>
             </div>
           </div>
@@ -325,6 +330,26 @@ Tooltip or Alert -->
       </div>
     </div>
 
+    <!--Form-->
+    <div class="container mt-5 bg-primary rounded pb-5">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com" />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Example textarea</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"></textarea>
+      </div>
+    </div>
     <script src="dist/js/bootstrap.bundle.min.js"></script>
     <script>
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
