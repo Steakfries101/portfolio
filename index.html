@@ -31,7 +31,9 @@
 2. A logotype animation that links to the top of the page (you may use one of the name / initial animations from previous assignments, or create a new one). Add animation CSS to main.scss.
 3.In-page links to each section of your site -->
 
-  <nav class="navbar navbar-expand-lg bg-primary shadow-lg">
+  <!--------------------------NAV BAR-------------------------->
+
+  <nav class="navbar fixed-top navbar-expand-lg bg-primary shadow-lg">
     <div class="container">
       <a class="navbar-brand py-3 fs-1 evan" href="index.html"> Evan Shaw </a>
 
@@ -67,25 +69,13 @@
       </div>
     </div>
   </nav>
-  <!-- 
-1.Name, biography, image of you 
-CTA
-Contact information 
-3 Projects with title, description and image 
-Education background 
-List of skills and competencies
-Other - testimonials, blog, etc
 
-2.Components (you must include)
-Carousel or Jumbotron 
-Accordian or Collapse
-Form 
-Cards
-Modal
-Tooltip or Alert -->
+  <!--------------------------ABOUT ME-------------------------->
 
-  <div class="container mt-5 pt-5 ps-5 rounded" id="about">
-    <div class="row d-flex bg-secondary pt-5 mb-5  rounded align-items-center justify-content-sm-center pb-5">
+  <div class="container mt-5 pt-5 px-4  rounded " id="about">
+    <div class="row d-flex bg-secondary space-top pt-5 mb-5  rounded align-items-center justify-content-sm-center pb-5">
+
+      <!----TOOLTIP-->
       <div class="col-lg-6 col-md-9">
         <img src="/Images/Cut photo.jpg" class="img-fluid rounded shadow-lg" data-bs-toggle="tooltip"
           data-bs-html="true" data-bs-placement="left" data-bs-custom-class="fs-4 bg-primary"
@@ -97,7 +87,7 @@ Tooltip or Alert -->
         <h3 class="fs-1 px-2 py-1 card-title text-white bg-primary mx-auto rounded overflow-hidden mt-5">I like
           dogs
           and
-          I like to code<span class="dot"> |</span></span>
+          I like to code<span class="dot">|</span></span>
         </h3>
         <p class="card-text text-white bg-opacity-10 fw-bold  mt-3 fs-4 text-primary">
           Hello! I'm Evan Shaw, a passionate coder hailing from the beautiful Vancouver Island. I've always been
@@ -108,14 +98,14 @@ Tooltip or Alert -->
           positive impact, and I'm always ready to help.<br></p>
         <h3 class=" py-2 fs-1 px-2 mx-auto mt-3 text-white bg-primary overflow-hidden rounded ">
           Welcome to my portfolio!</h3>
-
       </div>
     </div>
   </div>
+
+  <!--------------------------SKILLS-------------------------->
+
   <h2 class="my-5 pt-5 text-decoration-underline text-primary text-center">My Skills</h2>
-
   <div class="container-fluid text-center bg-opacity-25 pb-5 bg-primary shadow-lg" id="skill-set">
-
     <div class="row flex-lg-row pt-5">
       <div class=" col">
         <img src="/Images/html image.png" />
@@ -128,6 +118,8 @@ Tooltip or Alert -->
       </div>
     </div>
   </div>
+
+  <!--------------------------MY PAST PROJECTS (CAROUSEL)-------------------------->
 
   <div class="container-fluid w-100 mt-5 pt-5" id="my-work">
     <h2 class="mb-5 text-primary text-center text-decoration-underline">My Past Work</h2>
@@ -149,7 +141,7 @@ Tooltip or Alert -->
           </h5>
           <p class="d-md-none text-decoration-none pe-sm-3">Built with
             Javascript using Feathers and TMDB API</p>
-          <p class="d-sm-none d-md-block">
+          <p class=" d-none d-md-block">
             My DGL-213 final project (Applied Javascript), built using feathers, chart.js and the use of The Movie
             Database API.
           </p>
@@ -159,7 +151,7 @@ Tooltip or Alert -->
           <div class="carousel-caption fw-bold py-sm-2 bg-info ps-5 text-start rounded shadow">
             <h5 class="text-decoration-underline">Van Island Music Fest</h5>
             <p class="d-md-none">Built using Wordpress</p>
-            <p class=" d-sm-none d-md-block">
+            <p class=" d-none d-md-block">
               My DGL-223 final project: A reimagining of the Vancouver Island Musicfest website using Wordpress.
             </p>
           </div>
@@ -169,7 +161,7 @@ Tooltip or Alert -->
           <div class="carousel-caption py-sm-2 fw-bold bg-info ps-5 text-start rounded shadow">
             <h5 class="text-decoration-underline">Starwars Strike</h5>
             <p class="d-md-none">Built with JavaScript using SWAPI + leaflet.js.</p>
-            <p class="d-sm-none d-md-block">Another DGL-213 project, built using the starwars API and leaflet.js.</p>
+            <p class="d-none d-md-block">Another DGL-213 project, built using the starwars API and leaflet.js.</p>
           </div>
         </div>
       </div>
@@ -186,8 +178,12 @@ Tooltip or Alert -->
     </div>
   </div>
 
+  <!--------------------------EDUCATION (ACCORDION)-------------------------->
+
   <h2 class="text-primary text-decoration-underline text-center mt-5 pt-5">My Education</h2>
   <div class="accordion container my-5" id="accordionExample">
+
+    <!----ITEM 1---->
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button text-bg-dark fs-2 bg-primary" type="button" data-bs-toggle="collapse"
@@ -215,6 +211,7 @@ Tooltip or Alert -->
       </div>
     </div>
 
+    <!----ITEM 2---->
     <div class="accordion-item" id="education">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed fs-2 bg-primary text-white" type="button" data-bs-toggle="collapse"
@@ -242,6 +239,7 @@ Tooltip or Alert -->
       </div>
     </div>
 
+    <!----ITEM 3---->
     <div class="accordion-item" id="education">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed fs-2 bg-primary text-white" type="button" data-bs-toggle="collapse"
@@ -271,7 +269,8 @@ Tooltip or Alert -->
     </div>
   </div>
 
-  <!-- Modal -->
+  <!--------------------------CONTACT ME MODAL-------------------------->
+
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -283,19 +282,18 @@ Tooltip or Alert -->
         <div class="modal-body">
           <div class="row">
             <div class="col">
-              <h4><u>Phone Number</u></h4>
+              <h4>Phone Number</h4>
               <p class="fw-bold fs-4">250-895-1256</p>
             </div>
             <div class="col">
               <h4 class="text-decoration-underline">LinkedIn</h4>
-
               <a href="https://linkedin.com/in/evan-shaw-a253a9258">
                 linkedin.com/in/evan-shaw-a253a9258</a>
             </div>
           </div>
         </div>
 
-        <div class="modal-footer"></div>
+        <!----FORM---->
         <div class="container rounded pb-5">
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Your Email address</label>
@@ -306,7 +304,6 @@ Tooltip or Alert -->
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             <div class="mt-3 d-flex justify-content-around">
               <a class="btn btn-secondary" href="mailto:evanshaw34@gmail.com">Send me an Email!</a>
-
               <button type="button" class="btn btn-primary ms-5" data-bs-dismiss="modal">
                 Close
               </button>
@@ -317,7 +314,9 @@ Tooltip or Alert -->
     </div>
   </div>
 
-  <footer class="footer mt-auto py-3 bg-primary bg-opacity-25 pt-5">
+  <!--------------------------FOOTER-------------------------->
+
+  <footer class="footer pb-4 mt-5 bg-primary bg-opacity-25 pt-5">
     <div class="container text-center">
       <span class="text-muted">© 2023 Evan Shaw. All rights reserved.</span><br>
       <a href="mailto:evanshaw34@gmail.com">Email Me</a>
@@ -325,6 +324,8 @@ Tooltip or Alert -->
       </p>
     </div>
   </footer>
+
+  <!--------------------------TOOLTIP SCRIPT-------------------------->
 
   <script src="dist/js/bootstrap.bundle.min.js"></script>
   <script>
