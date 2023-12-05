@@ -12,9 +12,28 @@
   transition: 0.3s;
 }
 
-.evan:hover {
-  color: red;
-  font-size: 35px;
+.nav-item a:hover {
+  transition: 1s;
+  filter: brightness(0.6);
+}
+
+.nav-item button:hover {
+  transition: 1s ease-in-out;
+  transform: rotate(360deg);
+}
+
+.dot {
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes flashing {
@@ -23,7 +42,7 @@
   }
 
   25% {
-    color: yellow;
+    color: rgb(72, 72, 61);
   }
 
   50% {
