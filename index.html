@@ -25,11 +25,6 @@
 
 
 <body class="bg-primary bg-opacity-10">
-  <!-- Use Bootstrap to create a single page portfolio website. It must include (all must be created with Bootstrap classes, not regular CSS): 
-
-1.A fully responsive navbar that sticks to the top of the page and has 
-2. A logotype animation that links to the top of the page (you may use one of the name / initial animations from previous assignments, or create a new one). Add animation CSS to main.scss.
-3.In-page links to each section of your site -->
 
   <!--------------------------NAV BAR-------------------------->
 
@@ -37,8 +32,7 @@
     <div class="container">
       <a class="navbar-brand py-3 fs-1 evan" href="index.html"> Evan Shaw </a>
 
-      <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -77,9 +71,9 @@
 
       <!----TOOLTIP-->
       <div class="col-lg-6 col-md-9">
-        <img src="/Images/Cut photo.jpg" class="img-fluid rounded shadow-lg" data-bs-toggle="tooltip"
+        <img src="/Images/Cut-photo.jpg" class="img-fluid rounded shadow-lg" data-bs-toggle="tooltip"
           data-bs-html="true" data-bs-placement="left" data-bs-custom-class="fs-4 bg-primary"
-          data-bs-title="His name is Berkley, and yes hes a good boy." alt="..." />
+          data-bs-title="His name is Berkley, and yes hes a good boy." alt="A picture of a boy and his dog" />
       </div>
 
       <div class=" col-lg-0 col-xl-6 text-primary d-flex flex-column">
@@ -87,7 +81,7 @@
         <h3 class="fs-1 px-2 py-1 card-title text-white bg-primary mx-auto rounded overflow-hidden mt-5">I like
           dogs
           and
-          I like to code<span class="dot">|</span></span>
+          I like to code<span class="dot">|</span>
         </h3>
         <p class="card-text text-white bg-opacity-10 fw-bold  mt-3 fs-4 text-primary">
           Hello! I'm Evan Shaw, a passionate coder hailing from the beautiful Vancouver Island. I've always been
@@ -108,13 +102,13 @@
   <div class="container-fluid text-center bg-opacity-25 pb-5 bg-primary shadow-lg" id="skill-set">
     <div class="row flex-lg-row pt-5">
       <div class=" col">
-        <img src="/Images/html image.png" />
+        <img src="/Images/html-image.png" alt="A picture of the Html Logo" />
       </div>
       <div class="col">
-        <img src="Images/css image.png" />
+        <img src="Images/css-image.png" alt="A picture of the CSS logo" />
       </div>
       <div class="col">
-        <img src="Images/Javascript logo.png" />
+        <img src="Images/Javascript-logo.png" alt="A picture of the JavaScript logo" />
       </div>
     </div>
   </div>
@@ -134,7 +128,8 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active max-width: 100%;">
-          <img src="Images/Movie Mania Image.png" class="rounded-4 d-block w-100" alt="..." />
+          <img src="Images/Movie-Mania-Image.png" class="rounded-4 d-block w-100"
+            alt="Image of a project using the movie database" />
         </div>
         <div class="carousel-caption py-sm-2 fw-bold bg-info ps-sm-3 text-start rounded shadow">
           <h5 class="text-decoration-underline">Movie Mania
@@ -147,7 +142,8 @@
           </p>
         </div>
         <div class="carousel-item">
-          <img src="Images/Van Isl Music.png" class="d-block w-100 rounded-4" alt="..." />
+          <img src="Images/Van-isl-Music.png" class="d-block w-100 rounded-4"
+            alt="A photo of a site based on vancouver island music fest" />
           <div class="carousel-caption fw-bold py-sm-2 bg-info ps-5 text-start rounded shadow">
             <h5 class="text-decoration-underline">Van Island Music Fest</h5>
             <p class="d-md-none">Built using Wordpress</p>
@@ -157,7 +153,8 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="Images/213starwars.png" class="d-block w-100 rounded-4" alt="..." />
+          <img src="Images/213starwars.png" class="d-block w-100 rounded-4"
+            alt="An image of a project built with JavaScript" />
           <div class="carousel-caption py-sm-2 fw-bold bg-info ps-5 text-start rounded shadow">
             <h5 class="text-decoration-underline">Starwars Strike</h5>
             <p class="d-md-none">Built with JavaScript using SWAPI + leaflet.js.</p>
@@ -212,7 +209,7 @@
     </div>
 
     <!----ITEM 2---->
-    <div class="accordion-item" id="education">
+    <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed fs-2 bg-primary text-white" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -240,7 +237,7 @@
     </div>
 
     <!----ITEM 3---->
-    <div class="accordion-item" id="education">
+    <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed fs-2 bg-primary text-white" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -282,7 +279,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="col">
-              <h4>Phone Number</h4>
+              <h4 class="text-decoration-underline">Phone Number</h4>
               <p class="fw-bold fs-4">250-895-1256</p>
             </div>
             <div class="col">
@@ -321,7 +318,6 @@
       <span class="text-muted">© 2023 Evan Shaw. All rights reserved.</span><br>
       <a href="mailto:evanshaw34@gmail.com">Email Me</a>
       <a href="https://www.linkedin.com/in/evan-shaw-a253a9258">LinkedIn</a>
-      </p>
     </div>
   </footer>
 

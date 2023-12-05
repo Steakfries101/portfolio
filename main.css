@@ -11986,6 +11986,10 @@ textarea.form-control-lg {
   transition: 0.3s;
 }
 
+.space-top {
+  margin-top: 100px;
+}
+
 .nav-item a:hover {
   transition: 1s;
   filter: brightness(0.6);
@@ -11998,10 +12002,6 @@ textarea.form-control-lg {
 
 .dot {
   animation: blink 0.8s infinite;
-}
-
-.space-top {
-  margin-top: 100px;
 }
 
 @keyframes blink {
